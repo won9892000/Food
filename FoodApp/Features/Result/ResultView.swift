@@ -103,7 +103,7 @@ struct ResultView: View {
 
     private func foodCard(_ result: RecommendResult) -> some View {
         VStack(spacing: 12) {
-            Text(result.food.emoji)
+            Text("🍽️")
                 .font(.system(size: 48))
 
             Text(result.food.name)
@@ -152,7 +152,7 @@ struct ResultView: View {
             Text("🎉")
                 .font(.system(size: 64))
 
-            Text("오늘은 \(food.emoji) \(food.name)!")
+            Text("오늘은 \(food.name)!")
                 .font(.system(size: 22, weight: .bold))
 
             Text("맛있게 드세요~ 😋")

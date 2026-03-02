@@ -15,6 +15,7 @@ class FoodRepository: ObservableObject {
         self.foods = JSONLoader.load("foods")
         self.questions = JSONLoader.load("questions")
         self.history = Self.loadHistory()
+        printLoadingLog()
     }
 
     func saveChoice(_ food: Food) {
@@ -25,7 +26,7 @@ class FoodRepository: ObservableObject {
         }
     }
 
-    func recentFoodIds(days: Int) -> Set<Int> {
+    func recentFoodIds(days: Int) -> Set<String> {
         let cutoff = Date().addingTimeInterval(-Double(days) * 86400)
         return Set(
             history
@@ -46,5 +47,16 @@ class FoodRepository: ObservableObject {
             return []
         }
         return items
+    }
+
+    private func printLoadingLog() {
+        print("[FoodRepository] ✅ foods.json loaded: \(foods.count) items")
+        print("[FoodRepository] ✅ questions.json loaded: \(questions.count) questions")
+        if let first = foods.first {
+            print("[FoodRepository] 📋 First food: \(first.name) (id: \(first.id), cuisine: \(first.cuisine))")
+        }
+        if let first = questions.first {
+            print("[FoodRepository] 📋 First question: \(first.title) (id: \(first.id), type: \(first.type.rawValue))")
+        }
     }
 }

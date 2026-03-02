@@ -1,2578 +1,2578 @@
 [
   {
-    "id": 1,
+    "id": "food_001",
     "name": "김치찌개",
-    "emoji": "🍲",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 2,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "스트레스"
+      "healing",
+      "stress"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 2,
+    "id": "food_002",
     "name": "된장찌개",
-    "emoji": "🍲",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 3,
+    "id": "food_003",
     "name": "순두부찌개",
-    "emoji": "🍲",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 2,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "스트레스"
+      "healing",
+      "stress"
     ],
     "avoid_tags": [
       "seafood"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_004",
+    "name": "부대찌개",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 4,
-    "name": "부대찌개",
-    "emoji": "🍲",
-    "cuisine": "korean",
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 5,
+    "id": "food_005",
     "name": "감자탕",
-    "emoji": "🍖",
-    "cuisine": "korean",
-    "carb_base": "rice",
-    "soup": "Y",
-    "spicy": 1,
-    "greasy": 1,
-    "health": "heavy",
-    "mood_fit": [
-      "힐링",
-      "스트레스"
-    ],
-    "avoid_tags": [
-      "meat"
-    ],
+    "cuisine": "한식",
     "meal_time": [
       "dinner",
       "late"
-    ]
+    ],
+    "carb_base": "rice",
+    "soup": true,
+    "spicy": 1,
+    "greasy": 1,
+    "health": "heavy",
+    "mood_fit": [
+      "healing",
+      "stress"
+    ],
+    "avoid_tags": [
+      "meat"
+    ],
+    "is_popular": true
   },
   {
-    "id": 6,
+    "id": "food_006",
     "name": "뼈해장국",
-    "emoji": "🍖",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_007",
+    "name": "설렁탕",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 7,
-    "name": "설렁탕",
-    "emoji": "🥣",
-    "cuisine": "korean",
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_008",
+    "name": "갈비탕",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 8,
-    "name": "갈비탕",
-    "emoji": "🥣",
-    "cuisine": "korean",
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 9,
+    "id": "food_009",
     "name": "콩나물국밥",
-    "emoji": "🍚",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 1,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 10,
+    "id": "food_010",
     "name": "육개장",
-    "emoji": "🍲",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 3,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "스트레스"
+      "stress"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 11,
+    "id": "food_011",
     "name": "비빔밥",
-    "emoji": "🍚",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 12,
+    "id": "food_012",
     "name": "돌솥비빔밥",
-    "emoji": "🍚",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_013",
+    "name": "제육덮밥",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 13,
-    "name": "제육덮밥",
-    "emoji": "🍛",
-    "cuisine": "korean",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_014",
+    "name": "오징어덮밥",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 14,
-    "name": "오징어덮밥",
-    "emoji": "🍛",
-    "cuisine": "korean",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "스트레스"
+      "stress"
     ],
     "avoid_tags": [
       "seafood"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_015",
+    "name": "소불고기덮밥",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 15,
-    "name": "소불고기덮밥",
-    "emoji": "🍛",
-    "cuisine": "korean",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "귀찮음"
+      "happy",
+      "lazy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 16,
+    "id": "food_016",
     "name": "김치볶음밥",
-    "emoji": "🍳",
-    "cuisine": "korean",
-    "carb_base": "rice",
-    "soup": "N",
-    "spicy": 2,
-    "greasy": 1,
-    "health": "balanced",
-    "mood_fit": [
-      "귀찮음",
-      "스트레스"
-    ],
-    "avoid_tags": [],
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
+    ],
+    "carb_base": "rice",
+    "soup": false,
+    "spicy": 2,
+    "greasy": 1,
+    "health": "balanced",
+    "mood_fit": [
+      "lazy",
+      "stress"
+    ],
+    "avoid_tags": [],
+    "is_popular": false
   },
   {
-    "id": 17,
+    "id": "food_017",
     "name": "삼겹살",
-    "emoji": "🥓",
-    "cuisine": "korean",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "한식",
+    "meal_time": [
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner",
-      "late"
-    ]
+    "is_popular": true
   },
   {
-    "id": 18,
+    "id": "food_018",
     "name": "닭갈비",
-    "emoji": "🍗",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 19,
+    "id": "food_019",
     "name": "찜닭",
-    "emoji": "🍗",
-    "cuisine": "korean",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "한식",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 20,
+    "id": "food_020",
     "name": "닭한마리",
-    "emoji": "🐔",
-    "cuisine": "korean",
-    "carb_base": "none",
-    "soup": "Y",
+    "cuisine": "한식",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 21,
+    "id": "food_021",
     "name": "보쌈",
-    "emoji": "🥬",
-    "cuisine": "korean",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "한식",
+    "meal_time": [
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 22,
+    "id": "food_022",
     "name": "족발",
-    "emoji": "🍖",
-    "cuisine": "korean",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "한식",
+    "meal_time": [
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner",
-      "late"
-    ]
+    "is_popular": true
   },
   {
-    "id": 23,
+    "id": "food_023",
     "name": "칼국수",
-    "emoji": "🍜",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 24,
+    "id": "food_024",
     "name": "수제비",
-    "emoji": "🍜",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_025",
+    "name": "냉면(물)",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 25,
-    "name": "냉면(물)",
-    "emoji": "🍜",
-    "cuisine": "korean",
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_026",
+    "name": "냉면(비빔)",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 26,
-    "name": "냉면(비빔)",
-    "emoji": "🍜",
-    "cuisine": "korean",
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "스트레스"
+      "stress"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 27,
+    "id": "food_027",
     "name": "김밥",
-    "emoji": "🍙",
-    "cuisine": "korean",
+    "cuisine": "한식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [],
+    "is_popular": true
+  },
+  {
+    "id": "food_028",
+    "name": "떡볶이",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 28,
-    "name": "떡볶이",
-    "emoji": "🍢",
-    "cuisine": "korean",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 0,
     "health": "heavy",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [
       "gluten"
     ],
+    "is_popular": true
+  },
+  {
+    "id": "food_029",
+    "name": "순대",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 29,
-    "name": "순대",
-    "emoji": "🌭",
-    "cuisine": "korean",
-    "carb_base": "none",
-    "soup": "N",
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_030",
+    "name": "라면(분식)",
+    "cuisine": "한식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 30,
-    "name": "라면(분식)",
-    "emoji": "🍜",
-    "cuisine": "korean",
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "귀찮음",
-      "스트레스"
+      "lazy",
+      "stress"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 31,
+    "id": "food_031",
     "name": "짜장면",
-    "emoji": "🍝",
-    "cuisine": "chinese",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "귀찮음",
-      "기분좋음"
+      "lazy",
+      "happy"
     ],
     "avoid_tags": [
       "gluten"
     ],
+    "is_popular": true
+  },
+  {
+    "id": "food_032",
+    "name": "짬뽕",
+    "cuisine": "중식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 32,
-    "name": "짬뽕",
-    "emoji": "🍜",
-    "cuisine": "chinese",
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "스트레스"
+      "stress"
     ],
     "avoid_tags": [
       "gluten",
       "seafood"
     ],
+    "is_popular": true
+  },
+  {
+    "id": "food_033",
+    "name": "볶음밥",
+    "cuisine": "중식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 33,
-    "name": "볶음밥",
-    "emoji": "🍳",
-    "cuisine": "chinese",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [],
+    "is_popular": true
+  },
+  {
+    "id": "food_034",
+    "name": "탕수육",
+    "cuisine": "중식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 34,
-    "name": "탕수육",
-    "emoji": "🍖",
-    "cuisine": "chinese",
-    "carb_base": "none",
-    "soup": "N",
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 35,
+    "id": "food_035",
     "name": "마라탕",
-    "emoji": "🌶️",
-    "cuisine": "chinese",
-    "carb_base": "noodle",
-    "soup": "Y",
-    "spicy": 3,
-    "greasy": 1,
-    "health": "heavy",
-    "mood_fit": [
-      "스트레스",
-      "기분좋음"
-    ],
-    "avoid_tags": [],
+    "cuisine": "중식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 36,
-    "name": "마라샹궈",
-    "emoji": "🌶️",
-    "cuisine": "chinese",
-    "carb_base": "rice",
-    "soup": "N",
+    ],
+    "carb_base": "noodle",
+    "soup": true,
     "spicy": 3,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_036",
+    "name": "마라샹궈",
+    "cuisine": "중식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
+    ],
+    "carb_base": "rice",
+    "soup": false,
+    "spicy": 3,
+    "greasy": 1,
+    "health": "heavy",
+    "mood_fit": [
+      "stress",
+      "happy"
+    ],
+    "avoid_tags": [],
+    "is_popular": false
   },
   {
-    "id": 37,
+    "id": "food_037",
     "name": "훠궈(간단)",
-    "emoji": "🍲",
-    "cuisine": "chinese",
-    "carb_base": "none",
-    "soup": "Y",
+    "cuisine": "중식",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": true,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 38,
+    "id": "food_038",
     "name": "양장피",
-    "emoji": "🥗",
-    "cuisine": "chinese",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "seafood",
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 39,
+    "id": "food_039",
     "name": "유산슬",
-    "emoji": "🍛",
-    "cuisine": "chinese",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 40,
+    "id": "food_040",
     "name": "깐풍기",
-    "emoji": "🍗",
-    "cuisine": "chinese",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 41,
+    "id": "food_041",
     "name": "마파두부덮밥",
-    "emoji": "🍛",
-    "cuisine": "chinese",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "스트레스",
-      "귀찮음"
+      "stress",
+      "lazy"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 42,
+    "id": "food_042",
     "name": "고추잡채+꽃빵",
-    "emoji": "🌶️",
-    "cuisine": "chinese",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 43,
+    "id": "food_043",
     "name": "군만두",
-    "emoji": "🥟",
-    "cuisine": "chinese",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "gluten",
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 44,
+    "id": "food_044",
     "name": "딤섬(간단)",
-    "emoji": "🥟",
-    "cuisine": "chinese",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "기분좋음",
-      "힐링"
+      "happy",
+      "healing"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 45,
+    "id": "food_045",
     "name": "우육면",
-    "emoji": "🍜",
-    "cuisine": "chinese",
+    "cuisine": "중식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 46,
+    "id": "food_046",
     "name": "초밥",
-    "emoji": "🍣",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "힐링"
+      "happy",
+      "healing"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 47,
+    "id": "food_047",
     "name": "회덮밥",
-    "emoji": "🐟",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 48,
+    "id": "food_048",
     "name": "돈카츠",
-    "emoji": "🍱",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "귀찮음"
+      "happy",
+      "lazy"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 49,
+    "id": "food_049",
     "name": "카츠동",
-    "emoji": "🍛",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "귀찮음",
-      "기분좋음"
+      "lazy",
+      "happy"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_050",
+    "name": "규동",
+    "cuisine": "일식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 50,
-    "name": "규동",
-    "emoji": "🍛",
-    "cuisine": "japanese",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_051",
+    "name": "사케동",
+    "cuisine": "일식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 51,
-    "name": "사케동",
-    "emoji": "🍛",
-    "cuisine": "japanese",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 52,
+    "id": "food_052",
     "name": "라멘(돈코츠)",
-    "emoji": "🍜",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "힐링",
-      "스트레스"
+      "healing",
+      "stress"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_053",
+    "name": "라멘(쇼유)",
+    "cuisine": "일식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 53,
-    "name": "라멘(쇼유)",
-    "emoji": "🍜",
-    "cuisine": "japanese",
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 54,
+    "id": "food_054",
     "name": "우동",
-    "emoji": "🍜",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": true
   },
   {
-    "id": 55,
+    "id": "food_055",
     "name": "소바",
-    "emoji": "🍜",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 56,
+    "id": "food_056",
     "name": "카레라이스(일식)",
-    "emoji": "🍛",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음",
-      "기분좋음"
+      "lazy",
+      "happy"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 57,
+    "id": "food_057",
     "name": "오코노미야키",
-    "emoji": "🥞",
-    "cuisine": "japanese",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "일식",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 58,
+    "id": "food_058",
     "name": "타코야키",
-    "emoji": "🐙",
-    "cuisine": "japanese",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "일식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "귀찮음"
+      "happy",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten",
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 59,
+    "id": "food_059",
     "name": "야키니쿠(구이)",
-    "emoji": "🥩",
-    "cuisine": "japanese",
+    "cuisine": "일식",
+    "meal_time": [
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 60,
+    "id": "food_060",
     "name": "샤브샤브(간단)",
-    "emoji": "🍲",
-    "cuisine": "japanese",
-    "carb_base": "none",
-    "soup": "Y",
+    "cuisine": "일식",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 61,
+    "id": "food_061",
     "name": "파스타(토마토)",
-    "emoji": "🍝",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "힐링"
+      "happy",
+      "healing"
     ],
     "avoid_tags": [
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_062",
+    "name": "파스타(크림)",
+    "cuisine": "양식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 62,
-    "name": "파스타(크림)",
-    "emoji": "🍝",
-    "cuisine": "western",
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "gluten",
       "dairy"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_063",
+    "name": "리조또",
+    "cuisine": "양식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 63,
-    "name": "리조또",
-    "emoji": "🍚",
-    "cuisine": "western",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "힐링"
+      "happy",
+      "healing"
     ],
     "avoid_tags": [
       "dairy"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 64,
+    "id": "food_064",
     "name": "스테이크",
-    "emoji": "🥩",
-    "cuisine": "western",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "양식",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 65,
+    "id": "food_065",
     "name": "함박스테이크",
-    "emoji": "🍽️",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "귀찮음"
+      "happy",
+      "lazy"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 66,
+    "id": "food_066",
     "name": "피자",
-    "emoji": "🍕",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "gluten",
       "dairy"
     ],
+    "is_popular": true
+  },
+  {
+    "id": "food_067",
+    "name": "햄버거",
+    "cuisine": "양식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 67,
-    "name": "햄버거",
-    "emoji": "🍔",
-    "cuisine": "western",
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "귀찮음",
-      "기분좋음"
+      "lazy",
+      "happy"
     ],
     "avoid_tags": [
       "gluten",
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": true
   },
   {
-    "id": 68,
+    "id": "food_068",
     "name": "샌드위치",
-    "emoji": "🥪",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 69,
+    "id": "food_069",
     "name": "수프+빵(스프)",
-    "emoji": "🥖",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "bread",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten",
       "dairy"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 70,
+    "id": "food_070",
     "name": "샐러드볼",
-    "emoji": "🥗",
-    "cuisine": "western",
-    "carb_base": "salad",
-    "soup": "N",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 71,
+    "id": "food_071",
     "name": "브런치 플레이트",
-    "emoji": "🍳",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "힐링"
+      "happy",
+      "healing"
     ],
     "avoid_tags": [
       "gluten",
       "dairy"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 72,
+    "id": "food_072",
     "name": "오믈렛",
-    "emoji": "🍳",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음",
-      "힐링"
+      "lazy",
+      "healing"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 73,
+    "id": "food_073",
     "name": "치킨(프라이드)",
-    "emoji": "🍗",
-    "cuisine": "western",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "양식",
+    "meal_time": [
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_074",
+    "name": "치킨(구이)",
+    "cuisine": "양식",
     "meal_time": [
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 74,
-    "name": "치킨(구이)",
-    "emoji": "🍗",
-    "cuisine": "western",
-    "carb_base": "none",
-    "soup": "N",
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 75,
+    "id": "food_075",
     "name": "그라탕",
-    "emoji": "🧀",
-    "cuisine": "western",
+    "cuisine": "양식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "힐링"
+      "happy",
+      "healing"
     ],
     "avoid_tags": [
       "dairy",
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_076",
+    "name": "쌀국수",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 76,
-    "name": "쌀국수",
-    "emoji": "🍜",
-    "cuisine": "asian",
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_077",
+    "name": "분짜",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 77,
-    "name": "분짜",
-    "emoji": "🍜",
-    "cuisine": "asian",
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_078",
+    "name": "팟타이",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 78,
-    "name": "팟타이",
-    "emoji": "🍜",
-    "cuisine": "asian",
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "seafood",
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_079",
+    "name": "똠얌꿍",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 79,
-    "name": "똠얌꿍",
-    "emoji": "🍲",
-    "cuisine": "asian",
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 3,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [
       "seafood"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_080",
+    "name": "그린커리",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 80,
-    "name": "그린커리",
-    "emoji": "🍛",
-    "cuisine": "asian",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "힐링"
+      "happy",
+      "healing"
     ],
     "avoid_tags": [
       "dairy"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_081",
+    "name": "나시고랭",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 81,
-    "name": "나시고랭",
-    "emoji": "🍳",
-    "cuisine": "asian",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "귀찮음"
+      "happy",
+      "lazy"
     ],
     "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_082",
+    "name": "바쿠테(간단)",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 82,
-    "name": "바쿠테(간단)",
-    "emoji": "🍖",
-    "cuisine": "asian",
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_083",
+    "name": "인도커리+난",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 83,
-    "name": "인도커리+난",
-    "emoji": "🍛",
-    "cuisine": "asian",
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [
       "gluten",
       "dairy"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 84,
+    "id": "food_084",
     "name": "탄두리치킨",
-    "emoji": "🍗",
-    "cuisine": "asian",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "기타",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 2,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 85,
+    "id": "food_085",
     "name": "케밥",
-    "emoji": "🌯",
-    "cuisine": "asian",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음",
-      "기분좋음"
+      "lazy",
+      "happy"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_086",
+    "name": "타코",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 86,
-    "name": "타코",
-    "emoji": "🌮",
-    "cuisine": "asian",
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "기분좋음"
+      "happy"
     ],
     "avoid_tags": [
       "gluten",
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 87,
+    "id": "food_087",
     "name": "부리또",
-    "emoji": "🌯",
-    "cuisine": "asian",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "귀찮음",
-      "스트레스"
+      "lazy",
+      "stress"
     ],
     "avoid_tags": [
       "gluten",
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 88,
+    "id": "food_088",
     "name": "포케",
-    "emoji": "🥗",
-    "cuisine": "asian",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 89,
+    "id": "food_089",
     "name": "라사(말레이)",
-    "emoji": "🍜",
-    "cuisine": "asian",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "스트레스",
-      "기분좋음"
+      "stress",
+      "happy"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 90,
+    "id": "food_090",
     "name": "바인미",
-    "emoji": "🥖",
-    "cuisine": "asian",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "gluten",
       "meat"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 91,
+    "id": "food_091",
     "name": "편의점 도시락(가성비)",
-    "emoji": "🍱",
-    "cuisine": "snack",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_092",
+    "name": "컵라면+삼각김밥",
+    "cuisine": "분식",
     "meal_time": [
       "lunch",
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 92,
-    "name": "컵라면+삼각김밥",
-    "emoji": "🍜",
-    "cuisine": "snack",
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 2,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 93,
+    "id": "food_093",
     "name": "토스트",
-    "emoji": "🍞",
-    "cuisine": "snack",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "gluten",
       "dairy"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 94,
+    "id": "food_094",
     "name": "죽(전복/야채)",
-    "emoji": "🥣",
-    "cuisine": "snack",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 95,
+    "id": "food_095",
     "name": "핫도그",
-    "emoji": "🌭",
-    "cuisine": "snack",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "gluten",
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 96,
+    "id": "food_096",
     "name": "오뎅탕",
-    "emoji": "🍢",
-    "cuisine": "snack",
-    "carb_base": "none",
-    "soup": "Y",
+    "cuisine": "분식",
+    "meal_time": [
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "seafood",
       "gluten"
     ],
-    "meal_time": [
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 97,
+    "id": "food_097",
     "name": "튀김(모둠)",
-    "emoji": "🍤",
-    "cuisine": "snack",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "귀찮음"
+      "happy",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten",
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 98,
+    "id": "food_098",
     "name": "닭강정",
-    "emoji": "🍗",
-    "cuisine": "snack",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "분식",
+    "meal_time": [
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "heavy",
     "mood_fit": [
-      "기분좋음",
-      "스트레스"
+      "happy",
+      "stress"
     ],
     "avoid_tags": [
       "meat",
       "gluten"
     ],
-    "meal_time": [
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 99,
+    "id": "food_099",
     "name": "떡국/만두국",
-    "emoji": "🥣",
-    "cuisine": "snack",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 100,
+    "id": "food_100",
     "name": "만두(찐)",
-    "emoji": "🥟",
-    "cuisine": "snack",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch",
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "귀찮음",
-      "힐링"
+      "lazy",
+      "healing"
     ],
     "avoid_tags": [
       "gluten",
       "meat"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 101,
+    "id": "food_101",
     "name": "김치전",
-    "emoji": "🥞",
-    "cuisine": "snack",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "분식",
+    "meal_time": [
+      "dinner",
+      "late"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 1,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "스트레스"
+      "healing",
+      "stress"
     ],
     "avoid_tags": [
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_102",
+    "name": "파전",
+    "cuisine": "분식",
     "meal_time": [
       "dinner",
       "late"
-    ]
-  },
-  {
-    "id": 102,
-    "name": "파전",
-    "emoji": "🥞",
-    "cuisine": "snack",
-    "carb_base": "none",
-    "soup": "N",
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 1,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "gluten",
       "seafood"
     ],
-    "meal_time": [
-      "dinner",
-      "late"
-    ]
+    "is_popular": false
   },
   {
-    "id": 103,
+    "id": "food_103",
     "name": "계란말이+밥",
-    "emoji": "🍳",
-    "cuisine": "snack",
+    "cuisine": "분식",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "귀찮음",
-      "힐링"
+      "lazy",
+      "healing"
     ],
     "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_104",
+    "name": "비빔국수",
+    "cuisine": "분식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 104,
-    "name": "비빔국수",
-    "emoji": "🍜",
-    "cuisine": "snack",
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 2,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "스트레스",
-      "귀찮음"
+      "stress",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_105",
+    "name": "잔치국수",
+    "cuisine": "분식",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 105,
-    "name": "잔치국수",
-    "emoji": "🍜",
-    "cuisine": "snack",
+    ],
     "carb_base": "noodle",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 106,
+    "id": "food_106",
     "name": "닭가슴살 샐러드",
-    "emoji": "🥗",
-    "cuisine": "healthy",
-    "carb_base": "salad",
-    "soup": "N",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "meat"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 107,
+    "id": "food_107",
     "name": "그릭요거트볼",
-    "emoji": "🥣",
-    "cuisine": "healthy",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "dairy"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_108",
+    "name": "두부샐러드",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": false,
+    "spicy": 0,
+    "greasy": -1,
+    "health": "light",
+    "mood_fit": [
+      "healing"
+    ],
+    "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_109",
+    "name": "곤약볶음밥",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
+    "carb_base": "rice",
+    "soup": false,
+    "spicy": 0,
+    "greasy": 0,
+    "health": "light",
+    "mood_fit": [
+      "lazy",
+      "healing"
+    ],
+    "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_110",
+    "name": "샤브샤브(야채중심)",
+    "cuisine": "기타",
+    "meal_time": [
+      "dinner"
+    ],
+    "carb_base": "any",
+    "soup": true,
+    "spicy": 0,
+    "greasy": -1,
+    "health": "light",
+    "mood_fit": [
+      "healing"
+    ],
+    "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_111",
+    "name": "연어샐러드",
+    "cuisine": "기타",
     "meal_time": [
       "lunch"
-    ]
-  },
-  {
-    "id": 108,
-    "name": "두부샐러드",
-    "emoji": "🥗",
-    "cuisine": "healthy",
-    "carb_base": "salad",
-    "soup": "N",
-    "spicy": 0,
-    "greasy": -1,
-    "health": "light",
-    "mood_fit": [
-      "힐링"
     ],
-    "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
-  },
-  {
-    "id": 109,
-    "name": "곤약볶음밥",
-    "emoji": "🍚",
-    "cuisine": "healthy",
-    "carb_base": "rice",
-    "soup": "N",
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "귀찮음",
-      "힐링"
-    ],
-    "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
-  },
-  {
-    "id": 110,
-    "name": "샤브샤브(야채중심)",
-    "emoji": "🍲",
-    "cuisine": "healthy",
-    "carb_base": "none",
-    "soup": "Y",
-    "spicy": 0,
-    "greasy": -1,
-    "health": "light",
-    "mood_fit": [
-      "힐링"
-    ],
-    "avoid_tags": [],
-    "meal_time": [
-      "dinner"
-    ]
-  },
-  {
-    "id": 111,
-    "name": "연어샐러드",
-    "emoji": "🐟",
-    "cuisine": "healthy",
-    "carb_base": "salad",
-    "soup": "N",
-    "spicy": 0,
-    "greasy": 0,
-    "health": "light",
-    "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 112,
+    "id": "food_112",
     "name": "현미도시락",
-    "emoji": "🍱",
-    "cuisine": "healthy",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "귀찮음",
-      "힐링"
+      "lazy",
+      "healing"
     ],
     "avoid_tags": [],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 113,
+    "id": "food_113",
     "name": "오트밀",
-    "emoji": "🥣",
-    "cuisine": "healthy",
-    "carb_base": "none",
-    "soup": "N",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch"
+    ],
+    "carb_base": "any",
+    "soup": false,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "귀찮음",
-      "힐링"
+      "lazy",
+      "healing"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 114,
+    "id": "food_114",
     "name": "샌드위치(저칼)",
-    "emoji": "🥪",
-    "cuisine": "healthy",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "bread",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "귀찮음"
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 115,
+    "id": "food_115",
     "name": "비건비빔밥",
-    "emoji": "🍚",
-    "cuisine": "healthy",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [],
+    "is_popular": false
+  },
+  {
+    "id": "food_116",
+    "name": "채소비빔면",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 116,
-    "name": "채소비빔면",
-    "emoji": "🍜",
-    "cuisine": "healthy",
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 1,
     "greasy": -1,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   },
   {
-    "id": 117,
+    "id": "food_117",
     "name": "샐러드파스타",
-    "emoji": "🥗",
-    "cuisine": "healthy",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch"
+    ],
     "carb_base": "noodle",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "gluten"
     ],
-    "meal_time": [
-      "lunch"
-    ]
+    "is_popular": false
   },
   {
-    "id": 118,
+    "id": "food_118",
     "name": "수비드 닭/돼지",
-    "emoji": "🍖",
-    "cuisine": "healthy",
+    "cuisine": "기타",
+    "meal_time": [
+      "lunch",
+      "dinner"
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링",
-      "기분좋음"
+      "healing",
+      "happy"
     ],
     "avoid_tags": [
       "meat"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_119",
+    "name": "생선구이 정식",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 119,
-    "name": "생선구이 정식",
-    "emoji": "🐟",
-    "cuisine": "healthy",
+    ],
     "carb_base": "rice",
-    "soup": "N",
+    "soup": false,
     "spicy": 0,
     "greasy": 0,
     "health": "balanced",
     "mood_fit": [
-      "힐링"
+      "healing"
     ],
     "avoid_tags": [
       "seafood"
     ],
+    "is_popular": false
+  },
+  {
+    "id": "food_120",
+    "name": "미역국+밥(가벼움)",
+    "cuisine": "기타",
     "meal_time": [
       "lunch",
       "dinner"
-    ]
-  },
-  {
-    "id": 120,
-    "name": "미역국+밥(가벼움)",
-    "emoji": "🍲",
-    "cuisine": "healthy",
+    ],
     "carb_base": "rice",
-    "soup": "Y",
+    "soup": true,
     "spicy": 0,
     "greasy": 0,
     "health": "light",
     "mood_fit": [
-      "힐링",
-      "귀찮음"
+      "healing",
+      "lazy"
     ],
     "avoid_tags": [
       "seafood"
     ],
-    "meal_time": [
-      "lunch",
-      "dinner"
-    ]
+    "is_popular": false
   }
 ]

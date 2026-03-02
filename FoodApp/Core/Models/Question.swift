@@ -1,17 +1,14 @@
 import Foundation
 
-struct AnswerOption: Codable, Identifiable {
-    var id: String { label }
-    let label: String
-    let value: String
-    let tags: [String: String]
+enum QuestionType: String, Codable {
+    case single
+    case multi
 }
 
 struct Question: Codable, Identifiable {
     let id: String
-    let text: String
-    let emoji: String
-    let tag: String
-    let multi: Bool
+    let title: String
+    let subtitle: String?
+    let type: QuestionType
     let options: [AnswerOption]
 }

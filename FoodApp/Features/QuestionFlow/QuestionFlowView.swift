@@ -47,7 +47,7 @@ struct QuestionFlowView: View {
     private func questionContent(_ question: Question) -> some View {
         VStack(spacing: 24) {
             // Character emoji
-            Text(question.emoji)
+            Text("🤔")
                 .font(.system(size: 64))
                 .padding(.top, 32)
 
@@ -81,7 +81,7 @@ struct QuestionFlowView: View {
 
             // Question bubble
             VStack {
-                Text(question.text)
+                Text(question.title)
                     .font(.system(size: 22, weight: .bold))
                     .padding(24)
             }
@@ -101,7 +101,7 @@ struct QuestionFlowView: View {
                             viewModel.selectOption(option)
                         }
                     } label: {
-                        Text(option.label)
+                        Text("\(option.emoji ?? "") \(option.label)")
                             .font(.system(size: 16, weight: .semibold))
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(16)

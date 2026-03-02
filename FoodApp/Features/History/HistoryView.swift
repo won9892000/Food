@@ -34,7 +34,7 @@ struct HistoryView: View {
             LazyVStack(spacing: 10) {
                 ForEach(repository.history) { item in
                     HStack(spacing: 12) {
-                        Text(item.foodEmoji)
+                        Text("🍽️")
                             .font(.system(size: 28))
 
                         Text(item.foodName)
