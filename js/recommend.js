@@ -99,6 +99,7 @@ window.RecommendEngine = (function () {
   }
 
   function weightedRandomPick(items, count) {
+    if (items.length === 0) return [];
     if (items.length <= count) return items.slice();
 
     var minScore = items[items.length - 1].score;

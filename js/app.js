@@ -51,6 +51,7 @@
         var btn = document.createElement("button");
         btn.className = "option-btn";
         btn.textContent = opt.label;
+        btn.setAttribute("data-value", opt.value);
         btn.addEventListener("click", function () {
           if (opt.value === "none") {
             multiSelected = [];
@@ -59,7 +60,7 @@
             btn.classList.add("selected");
           } else {
             var noneBtn = optionsEl.querySelector(".option-btn.selected");
-            if (noneBtn && noneBtn.textContent.indexOf("없음") !== -1) {
+            if (noneBtn && noneBtn.getAttribute("data-value") === "none") {
               noneBtn.classList.remove("selected");
             }
             var idx = multiSelected.indexOf(opt.value);
@@ -185,7 +186,7 @@
 
   function formatBudget(band) {
     if (band === "any") return "가격 다양";
-    return parseInt(band).toLocaleString() + "원 이하";
+    return parseInt(band, 10).toLocaleString() + "원 이하";
   }
 
   function formatTime(t) {
