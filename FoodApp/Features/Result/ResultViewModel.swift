@@ -6,7 +6,7 @@ class ResultViewModel: ObservableObject {
 
     let answers: [String: String]
     let allFoods: [Food]
-    private var excludeIds: Set<Int> = []
+    private var excludeIds: Set<String> = []
 
     init(answers: [String: String], foods: [Food]) {
         self.answers = answers
@@ -15,7 +15,7 @@ class ResultViewModel: ObservableObject {
 
     func generateResults(
         avoidIngredients: Set<String>,
-        recentIds: Set<Int>,
+        recentIds: Set<String>,
         avoidDuplicates: Bool
     ) {
         results = RecommendationEngine.recommend(
@@ -30,7 +30,7 @@ class ResultViewModel: ObservableObject {
 
     func retryExcludingCurrent(
         avoidIngredients: Set<String>,
-        recentIds: Set<Int>,
+        recentIds: Set<String>,
         avoidDuplicates: Bool
     ) {
         for r in results {

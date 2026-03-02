@@ -1,89 +1,95 @@
 [
   {
     "id": "q1",
-    "text": "지금은?",
-    "emoji": "😊",
-    "tag": "meal_time",
-    "multi": false,
+    "title": "지금은?",
+    "subtitle": "식사 시간을 알려주세요",
+    "type": "single",
     "options": [
-      { "label": "점심 🍱", "value": "lunch", "tags": { "meal_time": "lunch" } },
-      { "label": "저녁 🌙", "value": "dinner", "tags": { "meal_time": "dinner" } },
-      { "label": "야식 🌃", "value": "late", "tags": { "meal_time": "late" } }
+      { "id": "q1_lunch", "label": "점심", "emoji": "🍱", "effects": { "meal_time": "lunch" } },
+      { "id": "q1_dinner", "label": "저녁", "emoji": "🌙", "effects": { "meal_time": "dinner" } },
+      { "id": "q1_late", "label": "야식", "emoji": "🌃", "effects": { "meal_time": "late" } }
     ]
   },
   {
     "id": "q2",
-    "text": "오늘 기분은?",
-    "emoji": "🤔",
-    "tag": "mood",
-    "multi": false,
+    "title": "오늘 기분은?",
+    "subtitle": "기분에 맞는 메뉴를 추천해드려요",
+    "type": "single",
     "options": [
-      { "label": "스트레스 🤯", "value": "stress", "tags": { "mood": "스트레스", "spicy_bonus": "1", "greasy_bonus": "1" } },
-      { "label": "힐링 🌿", "value": "healing", "tags": { "mood": "힐링", "health_pref": "light", "soup_bonus": "1" } },
-      { "label": "기분좋음 😆", "value": "happy", "tags": { "mood": "기분좋음" } },
-      { "label": "귀찮음 😵‍💫", "value": "lazy", "tags": { "mood": "귀찮음" } }
+      { "id": "q2_stress", "label": "스트레스", "emoji": "🤯", "effects": { "mood": "stress" } },
+      { "id": "q2_healing", "label": "힐링", "emoji": "🌿", "effects": { "mood": "healing" } },
+      { "id": "q2_happy", "label": "기분좋음", "emoji": "😆", "effects": { "mood": "happy" } },
+      { "id": "q2_lazy", "label": "귀찮음", "emoji": "😵‍💫", "effects": { "mood": "lazy" } }
     ]
   },
   {
     "id": "q3",
-    "text": "매운 거 가능?",
-    "emoji": "🌶️",
-    "tag": "spicy",
-    "multi": false,
+    "title": "매운 거 가능?",
+    "subtitle": null,
+    "type": "single",
     "options": [
-      { "label": "못먹음 🚫🌶", "value": "0", "tags": { "spicy": "0" } },
-      { "label": "약간 🌶", "value": "1", "tags": { "spicy": "1" } },
-      { "label": "매운거 좋아 🌶🌶", "value": "2", "tags": { "spicy": "2" } },
-      { "label": "매우 좋아 🌶🌶🌶", "value": "3", "tags": { "spicy": "3" } }
+      { "id": "q3_0", "label": "못먹음", "emoji": "🚫", "effects": { "spicy": "0" } },
+      { "id": "q3_1", "label": "약간", "emoji": "🌶️", "effects": { "spicy": "1" } },
+      { "id": "q3_2", "label": "매운거 좋아", "emoji": "🌶️��️", "effects": { "spicy": "2" } },
+      { "id": "q3_3", "label": "매우 좋아", "emoji": "🌶️🌶️🌶️", "effects": { "spicy": "3" } }
     ]
   },
   {
     "id": "q4",
-    "text": "국물 땡겨?",
-    "emoji": "🍲",
-    "tag": "soup",
-    "multi": false,
+    "title": "국물 땡겨?",
+    "subtitle": null,
+    "type": "single",
     "options": [
-      { "label": "국물 최고 🍲", "value": "Y", "tags": { "soup": "Y" } },
-      { "label": "국물 없어도 됨 🍛", "value": "N", "tags": { "soup": "N" } },
-      { "label": "상관없음 🎲", "value": "any", "tags": {} }
+      { "id": "q4_yes", "label": "국물 최고", "emoji": "🍲", "effects": { "soup": "true" } },
+      { "id": "q4_no", "label": "국물 없어도 됨", "emoji": "🍛", "effects": { "soup": "false" } },
+      { "id": "q4_any", "label": "상관없음", "emoji": "🎲", "effects": {} }
     ]
   },
   {
     "id": "q5",
-    "text": "밥 vs 면 vs 빵?",
-    "emoji": "🍚",
-    "tag": "carb_base",
-    "multi": false,
+    "title": "밥 vs 면 vs 빵?",
+    "subtitle": "탄수화물 베이스를 골라주세요",
+    "type": "single",
     "options": [
-      { "label": "밥 🍚", "value": "rice", "tags": { "carb_base": "rice" } },
-      { "label": "면 🍜", "value": "noodle", "tags": { "carb_base": "noodle" } },
-      { "label": "빵/샌드 🥪", "value": "bread", "tags": { "carb_base": "bread" } },
-      { "label": "상관없음 🎲", "value": "any", "tags": {} }
+      { "id": "q5_rice", "label": "밥", "emoji": "🍚", "effects": { "carb_base": "rice" } },
+      { "id": "q5_noodle", "label": "면", "emoji": "🍜", "effects": { "carb_base": "noodle" } },
+      { "id": "q5_bread", "label": "빵/샌드", "emoji": "🥪", "effects": { "carb_base": "bread" } },
+      { "id": "q5_any", "label": "상관없음", "emoji": "🎲", "effects": {} }
     ]
   },
   {
     "id": "q6",
-    "text": "오늘은 든든 vs 가볍게?",
-    "emoji": "💪",
-    "tag": "health",
-    "multi": false,
+    "title": "오늘은 든든 vs 가볍게?",
+    "subtitle": null,
+    "type": "single",
     "options": [
-      { "label": "든든하게 💪", "value": "heavy", "tags": { "health": "heavy" } },
-      { "label": "가볍게 🪽", "value": "light", "tags": { "health": "light" } },
-      { "label": "균형 ⚖️", "value": "balanced", "tags": { "health": "balanced" } }
+      { "id": "q6_heavy", "label": "든든하게", "emoji": "💪", "effects": { "health": "heavy" } },
+      { "id": "q6_light", "label": "가볍게", "emoji": "🪽", "effects": { "health": "light" } },
+      { "id": "q6_balanced", "label": "균형", "emoji": "⚖️", "effects": { "health": "balanced" } }
     ]
   },
   {
     "id": "q7",
-    "text": "기름진 건?",
-    "emoji": "🍗",
-    "tag": "greasy",
-    "multi": false,
+    "title": "기름진 건?",
+    "subtitle": null,
+    "type": "single",
     "options": [
-      { "label": "담백이 좋아 🥗", "value": "-1", "tags": { "greasy": "-1" } },
-      { "label": "보통 🍛", "value": "0", "tags": { "greasy": "0" } },
-      { "label": "기름져도 좋아 🍗", "value": "1", "tags": { "greasy": "1" } }
+      { "id": "q7_light", "label": "담백이 좋아", "emoji": "🥗", "effects": { "greasy": "-1" } },
+      { "id": "q7_normal", "label": "보통", "emoji": "🍛", "effects": { "greasy": "0" } },
+      { "id": "q7_greasy", "label": "기름져도 좋아", "emoji": "🍗", "effects": { "greasy": "1" } }
+    ]
+  },
+  {
+    "id": "q8",
+    "title": "오늘 피하고 싶은 재료?",
+    "subtitle": "해당 없으면 '없어요'를 선택하세요",
+    "type": "single",
+    "options": [
+      { "id": "q8_none", "label": "없어요", "emoji": "✅", "effects": {} },
+      { "id": "q8_seafood", "label": "해산물", "emoji": "🦐", "effects": { "avoid_tags": "seafood" } },
+      { "id": "q8_dairy", "label": "유제품", "emoji": "🥛", "effects": { "avoid_tags": "dairy" } },
+      { "id": "q8_meat", "label": "고기", "emoji": "🥩", "effects": { "avoid_tags": "meat" } },
+      { "id": "q8_gluten", "label": "밀가루", "emoji": "🍞", "effects": { "avoid_tags": "gluten" } }
     ]
   }
 ]

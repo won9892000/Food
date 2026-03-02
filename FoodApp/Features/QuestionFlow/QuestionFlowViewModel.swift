@@ -13,7 +13,7 @@ class QuestionFlowViewModel: ObservableObject {
 
     func loadQuestions(_ allQuestions: [Question]) {
         if questions.isEmpty {
-            questions = allQuestions.filter { $0.tag != "meal_time" }
+            questions = allQuestions.filter { $0.id != "q1" }
         }
     }
 
@@ -32,7 +32,7 @@ class QuestionFlowViewModel: ObservableObject {
     }
 
     func selectOption(_ option: AnswerOption) {
-        for (key, value) in option.tags {
+        for (key, value) in option.effects.toDictionary() {
             answers[key] = value
         }
 

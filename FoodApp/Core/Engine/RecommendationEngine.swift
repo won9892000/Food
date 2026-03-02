@@ -11,9 +11,9 @@ enum RecommendationEngine {
     static func recommend(
         answers: [String: String],
         foods: [Food],
-        excludeIds: Set<Int>,
+        excludeIds: Set<String>,
         avoidIngredients: Set<String>,
-        recentIds: Set<Int>,
+        recentIds: Set<String>,
         avoidDuplicates: Bool
     ) -> [RecommendResult] {
         let filtered = foods.filter { food in
@@ -26,6 +26,10 @@ enum RecommendationEngine {
             if let mealTime = answers["meal_time"],
                !food.mealTime.contains(mealTime) {
                 return false
+            }
+
+            if let avoidTag = answers["avoid_tags"], !avoidTag.isEmpty {
+                if food.avoidTags.contains(avoidTag) { return false }
             }
 
             if let spicyStr = answers["spicy"],
@@ -48,7 +52,7 @@ enum RecommendationEngine {
             if let carbBase = answers["carb_base"], carbBase != "any" {
                 if food.carbBase == carbBase {
                     score += 3.0 * 1.2
-                } else if food.carbBase == "none" {
+                } else if food.carbBase == "any" {
                     score += 1.0
                 }
             }
@@ -65,24 +69,16 @@ enum RecommendationEngine {
             }
 
             if let soup = answers["soup"] {
-                if soup == "Y" && food.soup == "Y" { score += 2.0 }
-                if soup == "N" && food.soup == "N" { score += 1.0 }
+                if soup == "true" && food.soup { score += 2.0 }
+                if soup == "false" && !food.soup { score += 1.0 }
             }
 
             if let mood = answers["mood"], food.moodFit.contains(mood) {
                 score += 2.0
             }
 
-            if let soupBonus = answers["soup_bonus"], Int(soupBonus) ?? 0 > 0 {
-                if food.soup == "Y" { score += 1.0 }
-            }
-
-            if let spicyBonus = answers["spicy_bonus"], Int(spicyBonus) ?? 0 > 0 {
-                if food.spicy >= 2 { score += 1.0 }
-            }
-
-            if let greasyBonus = answers["greasy_bonus"], Int(greasyBonus) ?? 0 > 0 {
-                if food.greasy >= 1 { score += 1.0 }
+            if food.isPopular {
+                score += 0.5
             }
 
             if avoidDuplicates && recentIds.contains(food.id) {
@@ -115,7 +111,7 @@ enum RecommendationEngine {
         let minScore = items.last?.score ?? 0
         let weighted = items.map { (food: $0.food, score: $0.score, w: max($0.score - minScore + 1, 0.1)) }
         var results: [(food: Food, score: Double)] = []
-        var used: Set<Int> = []
+        var used: Set<String> = []
 
         for _ in 0..<count {
             let totalW = weighted.filter { !used.contains($0.food.id) }.reduce(0.0) { $0 + $1.w }
@@ -139,7 +135,7 @@ enum RecommendationEngine {
     private static func buildReason(food: Food, answers: [String: String]) -> String {
         var parts: [String] = []
 
-        if answers["soup"] == "Y" && food.soup == "Y" {
+        if answers["soup"] == "true" && food.soup {
             parts.append("국물 있는")
         }
         if answers["health"] == "light" && food.health == "light" {
@@ -148,13 +144,13 @@ enum RecommendationEngine {
         if answers["health"] == "heavy" && food.health == "heavy" {
             parts.append("든든한")
         }
-        if answers["mood"] == "스트레스" && food.moodFit.contains("스트레스") {
+        if answers["mood"] == "stress" && food.moodFit.contains("stress") {
             parts.append("스트레스 해소에 딱인")
         }
-        if answers["mood"] == "힐링" && food.moodFit.contains("힐링") {
+        if answers["mood"] == "healing" && food.moodFit.contains("healing") {
             parts.append("힐링에 좋은")
         }
-        if answers["mood"] == "기분좋음" && food.moodFit.contains("기분좋음") {
+        if answers["mood"] == "happy" && food.moodFit.contains("happy") {
             parts.append("기분 좋을 때 먹는")
         }
 
