@@ -53,7 +53,6 @@ struct HomeView: View {
                 Spacer()
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color("BgColor", bundle: nil).opacity(0.01).ignoresSafeArea())
             .background(Color(red: 1.0, green: 0.976, blue: 0.94).ignoresSafeArea())
             .navigationDestination(isPresented: $viewModel.showQuestionFlow) {
                 QuestionFlowView(mealTime: viewModel.selectedMealTime)

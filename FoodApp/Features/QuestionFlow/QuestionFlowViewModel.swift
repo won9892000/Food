@@ -7,8 +7,7 @@ class QuestionFlowViewModel: ObservableObject {
 
     @Published var questions: [Question] = []
 
-    init(questions: [Question] = [], mealTime: String) {
-        self.questions = questions.filter { $0.tag != "meal_time" }
+    init(mealTime: String) {
         self.answers["meal_time"] = mealTime
     }
 

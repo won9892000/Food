@@ -9,6 +9,7 @@ class FoodRepository: ObservableObject {
     }
 
     private let historyKey = "foodHistory"
+    private let maxHistoryItems = 100
 
     init() {
         self.foods = JSONLoader.load("foods")
@@ -19,8 +20,8 @@ class FoodRepository: ObservableObject {
     func saveChoice(_ food: Food) {
         let item = HistoryItem(food: food)
         history.insert(item, at: 0)
-        if history.count > 100 {
-            history = Array(history.prefix(100))
+        if history.count > maxHistoryItems {
+            history = Array(history.prefix(maxHistoryItems))
         }
     }
 

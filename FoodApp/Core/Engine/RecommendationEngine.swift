@@ -160,7 +160,7 @@ enum RecommendationEngine {
 
         if parts.isEmpty {
             let defaults = ["오늘 딱 맞는", "취향에 어울리는", "이런 날 생각나는"]
-            parts.append(defaults.randomElement()!)
+            parts.append(defaults.randomElement() ?? "오늘 딱 맞는")
         }
 
         return parts.joined(separator: " ") + " 메뉴예요! 😋"

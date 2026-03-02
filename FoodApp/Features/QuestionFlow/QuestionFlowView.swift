@@ -10,7 +10,7 @@ struct QuestionFlowView: View {
     init(mealTime: String) {
         self.mealTime = mealTime
         // Questions will be set via onAppear since we need EnvironmentObject
-        _viewModel = StateObject(wrappedValue: QuestionFlowViewModel(questions: [], mealTime: mealTime))
+        _viewModel = StateObject(wrappedValue: QuestionFlowViewModel(mealTime: mealTime))
     }
 
     var body: some View {
