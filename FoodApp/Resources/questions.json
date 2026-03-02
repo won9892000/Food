@@ -1,0 +1,89 @@
+[
+  {
+    "id": "q1",
+    "text": "지금은?",
+    "emoji": "😊",
+    "tag": "meal_time",
+    "multi": false,
+    "options": [
+      { "label": "점심 🍱", "value": "lunch", "tags": { "meal_time": "lunch" } },
+      { "label": "저녁 🌙", "value": "dinner", "tags": { "meal_time": "dinner" } },
+      { "label": "야식 🌃", "value": "late", "tags": { "meal_time": "late" } }
+    ]
+  },
+  {
+    "id": "q2",
+    "text": "오늘 기분은?",
+    "emoji": "🤔",
+    "tag": "mood",
+    "multi": false,
+    "options": [
+      { "label": "스트레스 🤯", "value": "stress", "tags": { "mood": "스트레스", "spicy_bonus": "1", "greasy_bonus": "1" } },
+      { "label": "힐링 🌿", "value": "healing", "tags": { "mood": "힐링", "health_pref": "light", "soup_bonus": "1" } },
+      { "label": "기분좋음 😆", "value": "happy", "tags": { "mood": "기분좋음" } },
+      { "label": "귀찮음 😵‍💫", "value": "lazy", "tags": { "mood": "귀찮음" } }
+    ]
+  },
+  {
+    "id": "q3",
+    "text": "매운 거 가능?",
+    "emoji": "🌶️",
+    "tag": "spicy",
+    "multi": false,
+    "options": [
+      { "label": "못먹음 🚫🌶", "value": "0", "tags": { "spicy": "0" } },
+      { "label": "약간 🌶", "value": "1", "tags": { "spicy": "1" } },
+      { "label": "매운거 좋아 🌶🌶", "value": "2", "tags": { "spicy": "2" } },
+      { "label": "매우 좋아 🌶🌶🌶", "value": "3", "tags": { "spicy": "3" } }
+    ]
+  },
+  {
+    "id": "q4",
+    "text": "국물 땡겨?",
+    "emoji": "🍲",
+    "tag": "soup",
+    "multi": false,
+    "options": [
+      { "label": "국물 최고 🍲", "value": "Y", "tags": { "soup": "Y" } },
+      { "label": "국물 없어도 됨 🍛", "value": "N", "tags": { "soup": "N" } },
+      { "label": "상관없음 🎲", "value": "any", "tags": {} }
+    ]
+  },
+  {
+    "id": "q5",
+    "text": "밥 vs 면 vs 빵?",
+    "emoji": "🍚",
+    "tag": "carb_base",
+    "multi": false,
+    "options": [
+      { "label": "밥 🍚", "value": "rice", "tags": { "carb_base": "rice" } },
+      { "label": "면 🍜", "value": "noodle", "tags": { "carb_base": "noodle" } },
+      { "label": "빵/샌드 🥪", "value": "bread", "tags": { "carb_base": "bread" } },
+      { "label": "상관없음 🎲", "value": "any", "tags": {} }
+    ]
+  },
+  {
+    "id": "q6",
+    "text": "오늘은 든든 vs 가볍게?",
+    "emoji": "💪",
+    "tag": "health",
+    "multi": false,
+    "options": [
+      { "label": "든든하게 💪", "value": "heavy", "tags": { "health": "heavy" } },
+      { "label": "가볍게 🪽", "value": "light", "tags": { "health": "light" } },
+      { "label": "균형 ⚖️", "value": "balanced", "tags": { "health": "balanced" } }
+    ]
+  },
+  {
+    "id": "q7",
+    "text": "기름진 건?",
+    "emoji": "🍗",
+    "tag": "greasy",
+    "multi": false,
+    "options": [
+      { "label": "담백이 좋아 🥗", "value": "-1", "tags": { "greasy": "-1" } },
+      { "label": "보통 🍛", "value": "0", "tags": { "greasy": "0" } },
+      { "label": "기름져도 좋아 🍗", "value": "1", "tags": { "greasy": "1" } }
+    ]
+  }
+]
