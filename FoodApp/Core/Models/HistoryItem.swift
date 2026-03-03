@@ -12,4 +12,11 @@ struct HistoryItem: Codable, Identifiable {
         self.foodName = food.name
         self.date = Date()
     }
+
+    init(foodId: String, foodName: String, date: Date) {
+        self.id = UUID()
+        self.foodId = foodId
+        self.foodName = foodName
+        self.date = date
+    }
 }
