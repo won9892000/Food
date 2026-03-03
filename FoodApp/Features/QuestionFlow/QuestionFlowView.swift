@@ -9,14 +9,22 @@ struct QuestionFlowView: View {
 
     init(mealTime: String) {
         self.mealTime = mealTime
-        // Questions will be set via onAppear since we need EnvironmentObject
         _viewModel = StateObject(wrappedValue: QuestionFlowViewModel(mealTime: mealTime))
     }
 
     var body: some View {
         VStack(spacing: 0) {
+            // Top: progress header
+            ProgressHeaderView(
+                current: viewModel.currentIndex + 1,
+                total: viewModel.questions.count
+            )
+
             if let question = viewModel.currentQuestion {
-                questionContent(question)
+                questionCard(question)
+                    .id(viewModel.currentIndex)
+                    .transition(cardTransition)
+                    .animation(.easeInOut(duration: 0.3), value: viewModel.currentIndex)
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -25,9 +33,15 @@ struct QuestionFlowView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-                    dismiss()
+                    if viewModel.canGoBack {
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            viewModel.goBack()
+                        }
+                    } else {
+                        dismiss()
+                    }
                 } label: {
-                    Image(systemName: "xmark")
+                    Image(systemName: viewModel.canGoBack ? "chevron.left" : "xmark")
                         .foregroundColor(.secondary)
                 }
             }
@@ -43,78 +57,91 @@ struct QuestionFlowView: View {
         }
     }
 
+    private var cardTransition: AnyTransition {
+        let isForward = viewModel.transitionDirection == .forward
+        return .asymmetric(
+            insertion: .move(edge: isForward ? .trailing : .leading).combined(with: .opacity),
+            removal: .move(edge: isForward ? .leading : .trailing).combined(with: .opacity)
+        )
+    }
+
     @ViewBuilder
-    private func questionContent(_ question: Question) -> some View {
-        VStack(spacing: 24) {
-            // Character emoji
-            Text("🤔")
-                .font(.system(size: 64))
-                .padding(.top, 32)
+    private func questionCard(_ question: Question) -> some View {
+        VStack(spacing: 20) {
+            Spacer().frame(height: 8)
 
-            // Progress bar
-            VStack(spacing: 8) {
-                GeometryReader { geo in
-                    ZStack(alignment: .leading) {
-                        RoundedRectangle(cornerRadius: 4)
-                            .fill(Color.gray.opacity(0.2))
-                            .frame(height: 8)
+            // Center: question card
+            CuteCardView {
+                VStack(spacing: 12) {
+                    if let firstEmoji = question.options.first?.emoji {
+                        Text(firstEmoji)
+                            .font(.system(size: 40))
+                    }
 
-                        RoundedRectangle(cornerRadius: 4)
-                            .fill(
-                                LinearGradient(
-                                    colors: [Color(red: 1.0, green: 0.42, blue: 0.42), Color(red: 1.0, green: 0.85, blue: 0.24)],
-                                    startPoint: .leading,
-                                    endPoint: .trailing
-                                )
-                            )
-                            .frame(width: geo.size.width * viewModel.progress, height: 8)
-                            .animation(.easeInOut(duration: 0.4), value: viewModel.progress)
+                    Text(question.title)
+                        .font(.system(size: 22, weight: .bold))
+                        .multilineTextAlignment(.center)
+
+                    if let subtitle = question.subtitle {
+                        Text(subtitle)
+                            .font(.subheadline)
+                            .foregroundColor(.secondary)
+                            .multilineTextAlignment(.center)
                     }
                 }
-                .frame(height: 8)
-                .padding(.horizontal, 24)
-
-                Text(viewModel.progressText)
-                    .font(.caption)
-                    .foregroundColor(.secondary)
             }
 
-            // Question bubble
-            VStack {
-                Text(question.title)
-                    .font(.system(size: 22, weight: .bold))
-                    .padding(24)
-            }
-            .frame(maxWidth: .infinity, alignment: .leading)
-            .background(
-                RoundedRectangle(cornerRadius: 20)
-                    .fill(.white)
-                    .shadow(color: .black.opacity(0.08), radius: 8, y: 4)
-            )
-            .padding(.horizontal, 24)
-
-            // Options
+            // Bottom: option buttons
             VStack(spacing: 10) {
                 ForEach(question.options) { option in
+                    OptionButton(
+                        label: option.label,
+                        emoji: option.emoji,
+                        isSelected: viewModel.isOptionSelected(option),
+                        isMulti: question.type == .multi,
+                        action: {
+                            triggerHaptic()
+                            if question.type == .multi {
+                                withAnimation(.easeInOut(duration: 0.15)) {
+                                    viewModel.toggleOption(option)
+                                }
+                            } else {
+                                withAnimation(.easeInOut(duration: 0.3)) {
+                                    viewModel.selectOption(option)
+                                }
+                            }
+                        }
+                    )
+                }
+
+                // Confirm button for multi-select
+                if question.type == .multi {
                     Button {
-                        withAnimation(.easeInOut(duration: 0.2)) {
-                            viewModel.selectOption(option)
+                        triggerHaptic()
+                        withAnimation(.easeInOut(duration: 0.3)) {
+                            viewModel.confirmMultiSelection()
                         }
                     } label: {
-                        Text("\(option.emoji ?? "") \(option.label)")
-                            .font(.system(size: 16, weight: .semibold))
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding(16)
+                        Text("다음 →")
+                            .font(.system(size: 16, weight: .bold))
+                            .frame(maxWidth: .infinity)
+                            .padding(.vertical, 14)
                             .background(
-                                RoundedRectangle(cornerRadius: 14)
-                                    .stroke(Color.gray.opacity(0.3), lineWidth: 2)
-                                    .background(
-                                        RoundedRectangle(cornerRadius: 14)
-                                            .fill(.white)
+                                Capsule()
+                                    .fill(
+                                        LinearGradient(
+                                            colors: [
+                                                Color(red: 1.0, green: 0.42, blue: 0.42),
+                                                Color(red: 1.0, green: 0.56, blue: 0.56)
+                                            ],
+                                            startPoint: .leading,
+                                            endPoint: .trailing
+                                        )
                                     )
                             )
-                            .foregroundColor(.primary)
+                            .foregroundColor(.white)
                     }
+                    .padding(.top, 6)
                 }
             }
             .padding(.horizontal, 24)
@@ -122,4 +149,12 @@ struct QuestionFlowView: View {
             Spacer()
         }
     }
+
+    private func triggerHaptic() {
+        #if os(iOS)
+        let generator = UIImpactFeedbackGenerator(style: .light)
+        generator.impactOccurred()
+        #endif
+    }
 }
+
