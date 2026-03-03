@@ -102,14 +102,14 @@ class QuestionFlowViewModel: ObservableObject {
 
         // Remove effects from current question's stored selection before going back
         if let question = currentQuestion {
-            removeEffects(for: question)
+            removeEffects(for: question, at: currentIndex)
         }
 
         currentIndex -= 1
 
         // Remove effects from the question we're going back to (will be re-applied on re-selection)
         if let prevQuestion = currentQuestion {
-            removeEffects(for: prevQuestion)
+            removeEffects(for: prevQuestion, at: currentIndex)
         }
     }
 
@@ -121,8 +121,9 @@ class QuestionFlowViewModel: ObservableObject {
         }
     }
 
-    private func removeEffects(for question: Question) {
-        for option in question.options {
+    private func removeEffects(for question: Question, at index: Int) {
+        guard let selected = selectedOptionIds[index] else { return }
+        for option in question.options where selected.contains(option.id) {
             for key in option.effects.toDictionary().keys {
                 answers.removeValue(forKey: key)
             }
